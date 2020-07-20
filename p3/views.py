@@ -10,3 +10,5 @@ def home(request):
     return HttpResponse("<h1> welcome to  django page</h1>")
 def html_demo1(request):
     return render(request,"sample.html")
+def second(request):
+    return render(request,"directory/second.html")
