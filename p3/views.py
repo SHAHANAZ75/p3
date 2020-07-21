@@ -12,3 +12,10 @@ def html_demo1(request):
     return render(request,"sample.html")
 def second(request):
     return render(request,"directory/second.html")
+def third(request):
+    return render(request,"directory/third.html",context={'data':"shanu",'name':"Lucky"}) 
+def fourth(request):
+    fruits=['apple','mango','banana','kiwi','orange']
+    return render(request,"directory/fourth.html",{'fruits':fruits})  
+def fifth(request):
+    return render(request,"directory/fifth.html",{'a':10,'b':5})

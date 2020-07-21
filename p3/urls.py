@@ -22,6 +22,9 @@ urlpatterns = [
     #path('suffix',name of the function,name=name of the mapping)
     path('home',views.home,name='home'),
     path('html_demo1',views.html_demo1,name="html_demo1"),
-    path('second/',views.home,name="second")
+    path('second/',views.second,name="second"),
+    path('third/',views.third,name='third'),
+    path('fourth/',views.fourth,name='fourth'),
+    path('fifth/',views.fifth,name='fifth')
 ]
 
